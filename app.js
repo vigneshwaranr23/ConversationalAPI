@@ -7,7 +7,7 @@ app.get('/',function(req,res){
     res.send("Hello World");
     res.end();
 });
-app.POST ('/',function(req,res){
+app.post ('/',function(req,res){
     Console.log("HI test");
    console.log(JSON.stringify(req.body));
  });
