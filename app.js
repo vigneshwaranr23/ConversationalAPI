@@ -1,5 +1,5 @@
-var express=require('express'),
-apiai=require('api.ai');
+var express=require('express');
+var ai=require('apiai');
 var aiengine=apiai('19e8670c945d4a6a864d01c421f4a363');
 var app=express();
 var port=process.env.port||5001;
