@@ -8,7 +8,7 @@ var port=process.env.port||5001;
     //res.end();
 //});
 app.post('/',function(req,res){
-   console.log(req);
+   console.log(JSON.stringify(req.body));
    })
  });
 app.listen(port,function(){
