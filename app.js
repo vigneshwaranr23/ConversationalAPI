@@ -9,7 +9,6 @@ var port=process.env.port||5001;
 //});
 app.post('/',function(req,res){
    console.log(JSON.stringify(req.body));
-   })
  });
 app.listen(port,function(){
   console.log("App is running in port" +port);
