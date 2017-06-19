@@ -9,7 +9,7 @@ app.get('/',function(req,res){
 });
 app.post ('/',function(req,res){
     console.log("HI test");
-   console.log(JSON.stringify(req.body));
+   console.log(JSON.stringify(req));
  });
 app.listen(port,function(){
   console.log("App is running in port" +port);
