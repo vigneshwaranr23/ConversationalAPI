@@ -11,11 +11,15 @@ app.get('/',function(req,res){
     res.end();
 });
 app.post ('/',function(req,res){
-    req.on("data",function(obj){
-      console.log(obj);
-     });
-     console.log("HI test");
+  var apiagentreq=req.body.result&&req.body.result.parameters;
+  var resagent='hello welcome to TICKET BOOK chat bot';
+  console.log('request are'+apiagentreq);
+  return res.json({
+    speech:resagent,
+    displayText: resagent,
+    source:'hello ticket book'
   });
+
 app.listen(port,function(){
   console.log("App is running in port" +port);
 });
