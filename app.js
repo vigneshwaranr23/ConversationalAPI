@@ -10,7 +10,7 @@ app.get('/',function(req,res){
     res.send("Hello World");
     res.end();
 });
-app.post ('/webhook',function(req,res){
+app.post ('/',function(req,res){
     req.on("data",function(obj){
       console.log(obj);
     });
