@@ -12,7 +12,6 @@ app.post ('/',function(req,res){
       console.log(obj);
     });
     console.log("HI test");
-   console.log(obj);
  });
 app.listen(port,function(){
   console.log("App is running in port" +port);
