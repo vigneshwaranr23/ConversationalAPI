@@ -8,7 +8,7 @@ app.get('/',function(req,res){
     res.end();
 });
 app.post ('/',function(req,res){
-    Console.log("HI test");
+    console.log("HI test");
    console.log(JSON.stringify(req.body));
  });
 app.listen(port,function(){
