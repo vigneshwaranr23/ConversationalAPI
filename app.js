@@ -8,7 +8,9 @@ app.get('/',function(req,res){
     res.end();
 });
 app.post ('/',function(req,res){
-    var obj=JSON.parse(req);
+    req.on("data",function(obj){
+      console.log(obj);
+    });
     console.log("HI test");
    console.log(obj);
  });
