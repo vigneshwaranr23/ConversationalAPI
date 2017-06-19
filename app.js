@@ -6,10 +6,10 @@ var app=express();
 var port=process.env.PORT||5001;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.get('/',function(req,res){
-    res.send("Hello World");
-    res.end();
-});
+//app.get('/',function(req,res){
+  //  res.send("Hello World");
+    //res.end();
+//});
 app.post ('/',function(req,res){
     req.on("data",function(obj){
       console.log(obj);
