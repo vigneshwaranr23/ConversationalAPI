@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post ('/',function(req,res){
   var apiagentreq=req.body.result&&req.body.result.parameters;
-  var resagent='hello welcome to TICKET BOOK chat bot';
+  var resagent='Your Ticket has been blocked please choose you paymentType';
   console.log('request are'+apiagentreq);
   return res.json({
     speech:resagent,
