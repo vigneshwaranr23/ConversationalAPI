@@ -8,8 +8,9 @@ app.get('/',function(req,res){
     res.end();
 });
 app.post ('/',function(req,res){
+    var obj=JSON.parse(req);
     console.log("HI test");
-   console.log(req);
+   console.log(obj);
  });
 app.listen(port,function(){
   console.log("App is running in port" +port);
