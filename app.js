@@ -23,6 +23,7 @@ app.post ('/',function(req,res){
     displayText: resagent,
     source:'hello ticket book'
   });
+});
 
 app.listen(port,function(){
   console.log("App is running in port" +port);
