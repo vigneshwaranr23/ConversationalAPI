@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post ('/',function(req,res){
+  console.log(JSON.parse(req));
   var apiagentreq=req.body.result&&req.body.result.parameters;
   var resagent='Your Ticket has been blocked please choose you paymentType';
   console.log('request are'+apiagentreq);
