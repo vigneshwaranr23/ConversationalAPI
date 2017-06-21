@@ -18,7 +18,7 @@ app.post ('/',function(req,res){
   console.log(req);
   var apiagentreq=req.body.result&&req.body.result.parameters;
   var resagent='Your Ticket has been blocked please choose you paymentType';
-  console.log('request are'+apiagentreq);
+  console.log('request are'+JSON.stringify(apiagentreq));
   return res.json({
     speech:resagent,
     displayText: resagent,
