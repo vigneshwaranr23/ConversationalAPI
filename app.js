@@ -24,7 +24,7 @@ app.post ('/',function(req,res){
   console.log('body Obj are'+ JSON.stringify(body));
   console.log('param Obj are'+ JSON.stringify(param));
   
-  var resagent=var resagent='Your Ticket has been blocked for' +apiagentreq.Tamilmovies+(apiagentreq.language)+'at'+apiagentreq.Theaters+' please choose you paymentType';
+  var resagent='Your Ticket has been blocked for' +apiagentreq.Tamilmovies+(apiagentreq.language)+'at'+apiagentreq.Theaters+' please choose you paymentType';
   console.log('request are'+JSON.stringify(apiagentreq));
   return res.json({
     speech:resagent,
